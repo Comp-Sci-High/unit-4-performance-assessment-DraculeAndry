@@ -27,12 +27,19 @@ app.use((req, res, next) => {
 
 // 5) Paste in your data array of objects from the planning documents here. 
 
-
-const rabbitData = [
-  { name: "Cloud Hops", description: "Leaping through cotton candy skies." },
-  { name: "Sir Flops-A-Lot", description: "Glowing fur under moonlight." },
-  { name: "Sir Thumper", description: "Cherry blossoms follow every hop." }
-];
+const character = {
+    name: "Sir Thumper",
+    title: "Divine Meadow Guardian",
+    rank: "SSS Tier",
+    imageUrl: "https://a-z-animals.com/media/2022/05/Keep-rabbits-out-of-your-garden-header.jpg",
+    lore: "Forged beneath the aurora skies, Sir Thumper commands the cosmic carrots and protects the Meadow from shadowed fox spirits. His paws echo through dimensions, bending petals and starlight to his will.",
+    abilities: [
+        { icon: "✨", name: "Starfall Hop", description: "Leaps into the sky and crashes down in radiant stardust.", power: 95 },
+        { icon: "🌸", name: "Sakura Shield", description: "Summons a rotating blossom barrier of pure light.", power: 88 },
+        { icon: "🥕", name: "Cosmic Carrot Beam", description: "Fires a concentrated beam of aurora energy.", power: 99 },
+        { icon: "🌙", name: "Moonstep Mirage", description: "Creates illusionary copies across the meadow.", power: 90 }
+    ]
+};
 
 // 6) Add static file middleware here
 
